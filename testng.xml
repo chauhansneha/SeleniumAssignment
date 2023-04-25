@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AmazonSuite" parallel="tests" verbose = "3">
+	<listeners>
+		<listener class-name="report.ExtentReportManager" />
+		<listener class-name="listeners.AnnotationTransformer" />
+	</listeners>
+
+	<test thread-count="3" name="AmazonChromeTest">
+		<parameter name="browser" value="chrome" />
+		<groups>
+			<run>
+				<include name="master" />
+				<exclude name="" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="tests.BuyNow" />
+		</classes>
+	</test>
+	
+	<test thread-count="3" name="AmazonEdgeTest">
+		<parameter name="browser" value="edge" />
+		<groups>
+			<run>
+				<include name="master" />
+				<exclude name="" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="tests.BuyNow" />
+		</classes>
+	</test>
+	
+	<test thread-count="3" name="AmazonFirefoxTest">
+		<parameter name="browser" value="firefox" />
+		<groups>
+			<run>
+				<include name="master" />
+				<exclude name="" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="tests.BuyNow" />
+		</classes>
+	</test>
+</suite> 
