@@ -14,7 +14,7 @@
 		</classes>
 	</test>
 	
-<!--	<test name="AmazonEdgeTest" parallel="classes">
+	<test name="AmazonEdgeTest" parallel="classes">
 		<parameter name="browser" value="edge" />
 		
 		<classes>
@@ -22,7 +22,7 @@
 		</classes>
 	</test>
 	
- 	<test thread-count="3" name="AmazonFirefoxTest">
+<!--  	<test thread-count="3" name="AmazonFirefoxTest">
 		<parameter name="browser" value="firefox" />
 		<groups>
 			<run>
