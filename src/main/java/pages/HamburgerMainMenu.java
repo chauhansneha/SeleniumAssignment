@@ -22,7 +22,7 @@ public class HamburgerMainMenu extends BasePage {
 	// Action Methods Section
 	/**************** Digital Contents and Devices ******************************/
 	public void waitForKindleOption() {
-		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(kindleOption));
+		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(kindleOption));
 	}
 	
 	//Click kindle option

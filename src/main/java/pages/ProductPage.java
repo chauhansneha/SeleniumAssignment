@@ -18,7 +18,7 @@ public class ProductPage extends BasePage {
 
 	// Action Methods Section
 	public void waitForBuyNowbtn() {
-		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(buyNowBtn));
+		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(buyNowBtn));
 	}
 
 	public void clickBuyNow() {

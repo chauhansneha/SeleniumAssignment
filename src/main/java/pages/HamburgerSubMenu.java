@@ -21,7 +21,7 @@ public class HamburgerSubMenu extends BasePage {
 	// Action Methods
 	/**************** Kindle -> Kindle E-Readers ******************************/
 	public void waitForKindleOption() {
-		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(kindleInSubMenu));
+		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(kindleInSubMenu));
 	}
 
 	// Click kindle option

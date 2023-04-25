@@ -13,7 +13,6 @@ import pages.SignInPage;
 public class BuyNow extends BaseClass {
 
 	@Test(priority = 0, groups = { "master", "regression" })
-	// @Test
 	public void test_buynow_withoutSignIn() {
 
 		logger.info("***  Starting test method test_buynow_withoutSignIn() ***");

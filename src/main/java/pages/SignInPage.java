@@ -21,7 +21,7 @@ public class SignInPage extends BasePage {
 
 	// Action Methods Section
 	public void waitForSignInLabel() {
-		new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOf(signInLabelTxt));
+		new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOf(signInLabelTxt));
 	}
 
 	public Boolean emailLabelIsDisplayed() {
